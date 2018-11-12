@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "ramesh kumar sah"
+title                    : "Ramesh's Blog"
 title_separator          : "-"
 name                     : "Ramesh Kumar Sah"
 description              : "machine learning, data science, phd journey, embedded systems, blog"
@@ -106,8 +106,7 @@ author:
   avatar           : "/assets/images/bio_pic.jpg" 
   # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Graduate Student at Washington State University."
-  location         : "Pullman, Washington. "
-  email            : "rameshkrsah49@gmail"
+  location         : "Pullman, Washington."
   links:
     - label: "Github"
       icon: "fab fa-fw fa-github"
