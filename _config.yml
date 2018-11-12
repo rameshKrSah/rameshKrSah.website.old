@@ -108,6 +108,9 @@ author:
   bio              : "Graduate Student at Washington State University."
   location         : "Pullman, Washington."
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rameshkrsah"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rameshKrSah"
