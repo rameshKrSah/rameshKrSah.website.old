@@ -103,46 +103,34 @@ analytics:
 # Site Author
 author:
   name             : "Ramesh Kumar Sah"
-  avatar           : "/assets/images/bio_pic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio_pic.jpg" 
+  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Graduate Student at Washington State University."
   location         : "Pullman, Washington. "
-  email            :
+  email            : "rameshkrsah49@gmail"
   links:
-    - label: "rameshkrsah49@gmail.com"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
-    - label: "rameshkrsah.github.io"
+      url: mailto:rameshkrsah49@gmail.com
+    - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "rameshKrSah"
+      url: "https://rameshkrsah.github.io"
+    - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "rameshKrSah"
+      url: "https://twitter.com/rameshKrSah"
+    - label: "Github"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/rameshKrSah"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
+      url: "https://twitter.com/rameshKrSah"
+    - label: "Github"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
+      url: "https://github.com/rameshKrSah"
 
 # Reading Files
 include:
@@ -283,3 +271,11 @@ defaults:
       comments: # true
       share: true
       related: true
+      
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
