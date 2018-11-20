@@ -20,10 +20,10 @@ title                    : "Ramesh's Blog"
 title_separator          : "-"
 name                     : "Ramesh Kumar Sah"
 description              : "machine learning, data science, phd journey, embedded systems, blog"
-url                      : "rameshkrsah.github.io" 
+url                      : "https://rameshkrsah.github.io" 
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "rameshKrSah/rameshKrSah.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -102,10 +102,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ramesh Kumar Sah"
-  avatar           : "/assets/images/bio_pic.jpg" 
-  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Graduate Student at Washington State University."
+  name             : "Ramesh Kr Sah"
+  avatar           : "/assets/images/bio_pic.jpg"
+  bio              : "@CS at Washington State University."
   location         : "Pullman, Washington."
   links:
     - label: "LinkedIn"
