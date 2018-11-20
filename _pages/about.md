@@ -1,8 +1,7 @@
 ---
 title: "About"
 permalink: /about/
-header: true
-author_profile: true
+header: 
 
 ---
 
