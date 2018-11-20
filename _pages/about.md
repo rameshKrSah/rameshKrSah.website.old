@@ -5,4 +5,4 @@ header:
 
 ---
 
-Computer Science Graduate Student at Washington State University.
+Graduate Student at Washington State University.
