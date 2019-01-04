@@ -29,7 +29,7 @@ shifts all the larger values up to make a space, and insert into that correct po
 
 Now that we have completed the theoritical part, lets write the C code for Insertion sort. 
 
-```C
+```c
 /*
 * brief: Run insertion sort on the array pointed by pArr
 * param: Pointer to an int array to be sorted, and number of elements in the array.
@@ -81,7 +81,7 @@ void insertionSort(int * pArr, int size)
 
 Now to test the above code, we can write a simple test case like this.
 
-```C
+```c
 int main(void)
 {
 	int arr[] = {3, 4, 1, 6, 0, 8, 2, 10};
