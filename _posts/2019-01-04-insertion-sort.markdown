@@ -112,5 +112,4 @@ int main(void)
 }
 
 ```
-
-[Reference](https://en.wikipedia.org/wiki/Insertion_sort)
+[Wikipedia Article on Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
