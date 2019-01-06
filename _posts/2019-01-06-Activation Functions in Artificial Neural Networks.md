@@ -32,5 +32,5 @@ convergence of the network.
 doesn't provide with optimum result.
 
 ### References  
-[A nice atricle on the topic](https://www.analyticsvidhya.com/blog/2017/10/fundamentals-deep-learning-activation-functions-when-to-use-them/)  
+[A nice article on the topic](https://www.analyticsvidhya.com/blog/2017/10/fundamentals-deep-learning-activation-functions-when-to-use-them/)  
 [Wikipedia Article](https://en.wikipedia.org/wiki/Activation_function)
