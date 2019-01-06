@@ -104,8 +104,8 @@ analytics:
 author:
   name             : "Ramesh Kr Sah"
   avatar           : "/assets/images/bio_pic.jpg"
-  bio              : "@CS at Washington State University."
-  location         : "Pullman, Washington."
+  bio              : "PhD Student in Computer Sceince at Washington State University"
+  location         : "Pullman, Washington"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
