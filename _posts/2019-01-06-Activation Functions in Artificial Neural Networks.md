@@ -13,13 +13,13 @@ Y = activation_function(sum(weight * input) + biases)
 ```
 There are many types of activation functions and depending upon the appication we use the appropriate one.  
 
-**1. Binary Step Function  
-2. Linear Function  
-3. Sigmoid Function  
-4. Hyperbolic Tan (Tanh) Function  
-5. Rectified Linear unit (ReLU) Function  
-6. Leaky Rectified Linear Unit (ReLU) Function  
-7. Softmax Function**
+1. **Binary Step Function**
+2. **Linear Function**  
+3. **Sigmoid Function**  
+4. **Hyperbolic Tan (Tanh) Function**
+5. **Rectified Linear unit (ReLU) Function**
+6. **Leaky Rectified Linear Unit (ReLU) Functioni**
+7. **Softmax Function**
 
 Depending upon the propertise of the problem we can make a better choice of activation function for easy and quicker 
 convergence of the network.
