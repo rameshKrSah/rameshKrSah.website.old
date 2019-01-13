@@ -4,7 +4,6 @@ permalink: /about/
 header: 
 
 ---
-# About
 
 Hi, I am a graduate student at Washington State University where I study Computer Science. I work in projects related 
 to embedded systems, machine learning, and ubiquitous computing. You can find detailed information about me on 
