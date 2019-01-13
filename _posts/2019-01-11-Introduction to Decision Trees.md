@@ -23,24 +23,23 @@ There are several other tree building algorithms but these two are the most used
 ## Chossing the best split
 When building a classification tree, either the Gini index or the entroy are typically used to evaluate the quality of a particular split.  
 The Gini index defined as
-\begin{equation*}
-G = \sum_{k = 1}^KPmk(1 - Pmk)
-\end{equation*}
+
+$$G = \sum_{k = 1}^KPmk(1 - Pmk)$$
+
 is a measure of total variance across the K classes. It is not hard to see that the Gini index takes on a small value if all the $Pmk$'s are close to zero or one. For this reason the Gini index is referred to as a measure of node purity -- a small value indicates that a node contains predominantly observations from a single class.
 
 An alternative to the Gini index is **entropy**, given by
-\begin{equation*}
-E = -\sum_{k = 1}^KPmk \log(Pmk)
-\end{equation*}
+
+$$E = -\sum_{k = 1}^KPmk \log(Pmk)$$
+
 We can show that the entropy will take on a value near to zero if the $Pmk$'s are all near zero or one. Therefore, like the Gini index, the entropy will take on a small value if the $mth$ node is pure.
 
 Entropy is used to calculate the information gain which tells us the which attribute will result in highest information gain. Based on this, constructing a decision tree is all about finding attribute that returns the highest information gain. Information gain is simply given by  
-\begin{equation*}
-Gain(T, X) = Entropy(T) - Entropy(T, X)
-\end{equation*}
+
+$$Gain(T, X) = Entropy(T) - Entropy(T, X)$$
 
 ### Calculating Information Gain 
-Lets say that we have reached the attribute "City_Size" with total 14 instances.
+Lets say that we have reached the attribute City_Size with total 14 instances.
             
             City_Size
             [9A, 5B]
@@ -68,7 +67,7 @@ Finally the information gain if we choose to split the nodes with attribute City
 
 $$Gain = E1 - E2 = 0.9403 - 0.7885 = 0.1515$$
 
-We can interpret this as: By doing the split with the attribute "City_Size", we are able to reduce the uncertainty in the sub-tree prediction outcome by 0.1518, measured in bits. At each node of the classification tree, this calculation is performed for every feature, and the feature with the largest gain is chosen for the split in the greedy manner. This process is applied recursively from the root-node down, and stops when a leaf node contains instances all having the same class or some other stopping criteria is met.
+We can interpret this as: By doing the split with the attribute City_Size, we are able to reduce the uncertainty in the sub-tree prediction outcome by 0.1518, measured in bits. At each node of the classification tree, this calculation is performed for every feature, and the feature with the largest gain is chosen for the split in the greedy manner. This process is applied recursively from the root-node down, and stops when a leaf node contains instances all having the same class or some other stopping criteria is met.
 
 ## Advantages of decision trees
 - Simple to understand and to interpret. Trees can be visualized.
