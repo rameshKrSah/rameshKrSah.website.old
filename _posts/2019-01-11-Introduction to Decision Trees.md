@@ -1,11 +1,12 @@
 ---
 title: 	"Introduction to Decision Trees"
 date: 	2019-01-11
+mathjax:  true
 tags: 	[machine_learning]
 ---
 
 # Decision Trees
-A decision tree is a decision support tool that uses a tree-like model of decision and their possibile consequense to form a solution for a given problem. In a decision tree each node represents a feature (attribute), ach link (branch) represents a decision (rule) and each leaf represents an outcome (categorical or continous). Decision trees can used for both classification and regression problems. Trees models where the target variable can take a discrete set of values are called classification trees; in these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels. Decision trees where the target variable can take continous values are called regression trees. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred form the data.  
+A decision tree is a decision support tool that uses a tree-like model of decision and their possibile consequense to form a solution for a given problem. In a decision tree each node represents a feature (attribute), ach link (branch) represents a decision (rule) and each leaf represents an outcome (categorical or continous). Decision trees can be used for both classification and regression problems. Trees models where the target variable can take a discrete set of values are called classification trees; in these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels. Decision trees where the target variable can take continous values are called regression trees. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred form the data.  
 
 The tree is obtained or learned by spiliting the training set into subsets based on an attribute value set. This process is repeated on each derived subset in a recursive top-down greedy manner and is known as recursive binary splitting. The approach is top-down because it begins at the top of the tree and then successively splits the predictor space; each split is indicated via two new branches further down on the tree. It is greedy because at each step of the tree-building process, the best split is made at that particular step, rather than looking ahead and picking a split that will lead to a better tree in some future step. The process is completed when the subset at a node has all the same target variables, or when spiliting no longer adds value to the predictions.
 
