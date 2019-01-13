@@ -10,7 +10,7 @@ to embedded systems, machine learning, and ubiquitous computing. You can find de
 LinkedIn. 
 
 This is my blog, where I write about things I find useful and need a reference to it in future. I don't have a public 
-comment section, and if you need to say anything about my posts you can send me a message on Twitter. 
+comment section, so if you have any comments please send me a message on Twitter. 
 
 I hope you will find some thing useful here. :)
 
