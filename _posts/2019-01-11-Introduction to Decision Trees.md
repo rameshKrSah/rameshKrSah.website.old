@@ -1,7 +1,7 @@
 ---
 title: 	"Introduction to Decision Trees"
 date: 	2019-01-11
-mathjax:  true
+mathjax: True
 tags: 	[machine_learning]
 ---
 
