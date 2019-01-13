@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "sunrise" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ramesh's Blog"
+title                    : "Ramesh Kr Sah"
 title_separator          : "-"
 name                     : "Ramesh Kumar Sah"
 description              : "machine learning, data science, phd journey, embedded systems, blog"
@@ -104,27 +104,21 @@ analytics:
 author:
   name             : "Ramesh Kr Sah"
   avatar           : "/assets/images/bio_pic.jpg"
-  bio              : "PhD Student in Computer Sceince at Washington State University"
+  bio              : "PhD Student in Computer Science at Washington State University"
   location         : "Pullman, Washington"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/rameshkrsah"
-    - label: "Github"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/rameshKrSah"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:rameshkrsah49@gmail.com
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/rameshkrshah"
 
 
 # Site Footer
 footer:
   links:
-    - label: "Github"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rameshKrSah"
     - label: "Twitter"
