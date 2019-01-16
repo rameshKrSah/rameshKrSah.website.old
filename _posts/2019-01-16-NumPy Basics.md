@@ -1,4 +1,4 @@
- ---
+---
 title: 	"NumPy Basics"
 date: 	2019-01-16
 mathjax: True
