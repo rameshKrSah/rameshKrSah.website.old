@@ -5,6 +5,8 @@ mathjax: True
 tags: 	[machine_learning]
 ---
 
+# Introduction to NumPy "Numerical Python"
+
 In this example we will exlore the basic and fundamental usage of [NumPy](https://www.numpy.org/) package. NumPy is the 
 fundamental package used for scientific computing with Python. The data container used in NumPy is the numpy array. 
 A numpy array is a grid of values, all the same type, and is indexed by a tuple of non-negative integers. The number of dimensions is the rank of the array; the shape of the array is a tuple of integers giving the size of the array along each dimension.
@@ -136,11 +138,11 @@ print(a[0,1])
     
 
 
-```python
-# Two ways of accessing the data in the middle row of the array.
-# Mixing integer indexing with slices yields an array of lower rank, while 
-# using only the slices yields an array of the same rank as the original array.
+Two ways of accessing the data in the middle row of the array.  
+Mixing integer indexing with slices yields an array of lower rank, while using only the slices yields an array of the same rank as the original array.
 
+
+```python
 a = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
 
 row_1 = a[1, :] # rank 1 view of the second row of a
@@ -218,7 +220,7 @@ print(a)
      [10 21 12]]
     
 
-Datatypes  
+### Datatypes   
 Every numpy array is a grid of elements of the same type. We can let numpy decide the datatype for us or we can specify them ourselves.
 
 
@@ -234,7 +236,7 @@ print(y.dtype)
     int64
     
 
-Array math  
+### Array math  
 Basic mathematical functions operate elementwise on arrays, and are available both as operator overloads and as functions.
 
 
@@ -284,10 +286,10 @@ print(np.sqrt(x))
     
 
 
-```python
-# To form the inner / dot product between a vector / matrix and a vector / matrix we use the dot operator. dot operator is 
-# available both as a function in the module and as an instance method of array objects.
+To form the inner / dot product between a vector / matrix and a vector / matrix we use the dot operator. dot operator is  available both as a function in the module and as an instance method of array objects.
 
+
+```python
 x = np.array([[1,2],[3,4]])
 y = np.array([[5,6],[7,8]])
 
@@ -341,7 +343,7 @@ print(np.prod(x, axis=0)) # computes the product of columns
     [3 8]
     
 
-Broadcasting  
+### Broadcasting  
 Broadcasting is a powerful mechanism that allows numpy to work with arrays of different shapes when performing arthimetic operations. Frequently we have a smaller array and a larger array, and we want to use the smaller array multiple times to perform some operations on the larger array. Here, broadcasting comes into play.
 
 
@@ -391,7 +393,7 @@ print(y)
     
 
 That's it!  
-The line ```y = x + v``` works even though x has shape(4, 3) and v has shape (3,) due to broadcasting; this line works as if v actually had shape (4, 3), where each row was a copy of v, and the sum was performed elementwise.  
+The line y = x + v works even though x has shape(4, 3) and v has shape (3,) due to broadcasting; this line works as if v actually had shape (4, 3), where each row was a copy of v, and the sum was performed elementwise.  
 
 Broadcasting two arrays together follows these rules:  
 1. If the array do not have the same rank, prepend the shape of the lower rank array with 1's until both shapes have the same length.
@@ -402,12 +404,10 @@ Broadcasting two arrays together follows these rules:
 
 Function that support braodcasting are known as **universal funcions**. The full list of universal functions is available [here](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
 
-Array manipulation [routines](https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html) 
-
-
+## Array manipulation [routines](https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html) 
+1. Reshaping an array : gives a new shape to an array without changing its data
 
 ```python
-# Reshaping an array : gives a new shape to an array without changing its data
 a = np.arange(6)
 print(a.shape, a)
 
@@ -446,8 +446,8 @@ print(f.shape, f)
     
 
 
+2. Ravel : Returns a contiguous falttened array. Returns a 1-D array
 ```python
-# Ravel : Returns a contiguous falttened array. Returns a 1-D array
 x = np.array([[1, 2, 3], [4, 5, 6]])
 print(x.shape, x)
 
@@ -477,9 +477,8 @@ print(np.ravel(x, order='K'))
     [1 2 3 4 5 6]
     
 
-
+3. Flat : Returns a 1-D iterator over the array
 ```python
-# Flat : Returns a 1-D iterator over the array
 x = np.arange(1, 7).reshape(2, 3)
 print(x)
 
@@ -507,8 +506,8 @@ print(x)
     
 
 
+4. Flatten : Returns a copy of the array collapsed into one dimension
 ```python
-# Flatten : Returns a copy of the array collapsed into one dimension
 a = np.array([[1, 2], [3, 4]])
 print(a)
 
@@ -530,8 +529,8 @@ print(c)
     
 
 
+5. Transpose : Compute the transpose 
 ```python
-# Transpose : Compute the transpose 
 x = np.arange(4).reshape(2, 2)
 print(x)
 
@@ -557,8 +556,8 @@ print(y)
     
 
 
+6. Swapaxes : interchange two axes of an array
 ```python
-# swapaxes : interchange two axes of an array
 x = np.array([[1, 2, 3]])
 print(x)
 
@@ -590,8 +589,8 @@ print(y)
     
 
 
+7. Creating arrays by speciying minimum dimension
 ```python
-# Creating arrays by speciying minimum dimension
 a = np.atleast_1d([1, 2])
 print(a)
 print(a.shape)
@@ -615,8 +614,8 @@ print(c.shape)
     
 
 
+8. Expanding and squeezing the shape of arrays
 ```python
-# Expanding and squeezing the shape of arrays
 x = np.array([1, 2])  # x has two axis here, axis = 0 is columns and axis = 1 is row
 print(x)
 print(x.shape)
@@ -669,8 +668,8 @@ print(z.shape)
     
 
 
+9. Splitting an array
 ```python
-# Splitting an array
 # 1. Split : Split an array into multiple sub-arrays
 x = np.arange(9.0)
 print(x)
@@ -725,8 +724,8 @@ print(y)
     
 
 
+10. Adding and removing elements
 ```python
-# Adding and removing elements
 # 1. delete : Return a new array with sub-arrys along an axis deleted. 
 x = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
 print(x)
