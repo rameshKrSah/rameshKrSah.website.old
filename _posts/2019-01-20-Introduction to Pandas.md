@@ -15,7 +15,7 @@ The primary data structure in *pandas* are implemented as two classes:
 
 One way to create **Series** is by constructing a series object, like this:
 
-```
+```python
 # Importing pandas and printing its version
 import pandas as pd
 print(pd.__version__)
@@ -35,7 +35,7 @@ print(pd.Series(['San Francisco', 'San Jose', 'Sacramento']))
 **DataFrame** objects can be created by passing a dict mapping string column names to their respective **Series**. If the sereis don't match length, missing values are filled with special NAN values.
 
 
-```
+```python
 city_names = pd.Series(['San Francisco', 'San Jose', 'Sacramento'])
 population = pd.Series([852469, 145632, 680943])
 
@@ -93,7 +93,7 @@ pd.DataFrame({'City name' : city_names, 'Population' : population})
 But most of the time, we load an entire file into a DataFrame. Here we load a file with California housing data from cloud.
 
 
-```
+```python
 cali_hou_df = pd.read_csv("https://download.mlcc.google.com/mledu-datasets/california_housing_train.csv", sep=",")
 cali_hou_df.describe()
 ```
@@ -236,7 +236,7 @@ cali_hou_df.describe()
 The example above used DataFrame.describe to show intresting statistics about a DataFrame. Another useful function is DataFrame.head, which shows the first few records of a DataFrame.
 
 
-```
+```python
 cali_hou_df.head()
 ```
 
@@ -343,16 +343,12 @@ Another powerful feature of *pandas* is graphing. For example, DataFrame.hist le
 
 
 
-```
+```python
 cali_hou_df.hist('housing_median_age')
 ```
 
-
-
-
     array([[<matplotlib.axes._subplots.AxesSubplot object at 0x7f7351b13828>]],
           dtype=object)
-
 
 
 
@@ -362,7 +358,7 @@ cali_hou_df.hist('housing_median_age')
 We can access DataFrame data using Python dict/list operations:
 
 
-```
+```python
 cities = pd.DataFrame({ 'City name': city_names, 'Population': population })
 print(type(cities['City name']))
 cities['City name']
@@ -370,10 +366,6 @@ cities['City name']
 
     <class 'pandas.core.series.Series'>
     
-
-
-
-
     0    San Francisco
     1         San Jose
     2       Sacramento
@@ -382,32 +374,24 @@ cities['City name']
 
 
 
-```
+```python
 print(type(cities['City name'][1]))
 cities['City name'][1]
 ```
 
     <class 'str'>
-    
-
-
-
-
     'San Jose'
 
 
 
 
-```
+```python
 print(type(cities[0:2]))
 cities[0:2]
 ```
 
     <class 'pandas.core.frame.DataFrame'>
     
-
-
-
 
 <div>
 <style scoped>
@@ -451,12 +435,9 @@ cities[0:2]
 We can apply Python's basic arithmetic operation to Series.
 
 
-```
+```python
 population / 1000
 ```
-
-
-
 
     0    852.469
     1    145.632
@@ -466,12 +447,9 @@ population / 1000
 
 
 
-```
+```python
 cities
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -530,7 +508,7 @@ cities
 
 
 
-```
+```python
 print(cities[['Population', 'Area']]) # read the columns for Population and Area
 ```
 
@@ -541,11 +519,9 @@ print(cities[['Population', 'Area']]) # read the columns for Population and Area
     
 
 
-```
+```python
 cities[cities['Population'] > 150000]
 ```
-
-
 
 
 <div>
@@ -597,7 +573,7 @@ cities[cities['Population'] > 150000]
 
 
 
-```
+```python
 cities[:2] # Get the firs two rows
 ```
 
@@ -653,7 +629,7 @@ cities[:2] # Get the firs two rows
 
 
 
-```
+```python
 cities.loc[[0], ['Area', 'Population Density']] # selects the subset of the dataframe by specifying the rows and columns
 ```
 
@@ -697,7 +673,7 @@ cities.loc[[0], ['Area', 'Population Density']] # selects the subset of the data
 [NumPy](numpy.org) is a popular toolkit for scientific computing. *pandas* Series can be used as arguments to most Numpy functions.
 
 
-```
+```python
 import numpy as np
 np.log(population)
 ```
@@ -715,12 +691,9 @@ np.log(population)
 For more complex single-column transformation, we can use `Series.apply`. Like the Python map function, `Series.apply` accepts as an argument a lambda function, which is applied to each value.
 
 
-```
+```python
 population.apply(lambda val: val > 1000000)
 ```
-
-
-
 
     0    False
     1    False
@@ -732,7 +705,7 @@ population.apply(lambda val: val > 1000000)
 Modifying DataFrames is also straightforward.
 
 
-```
+```python
 cities['Area'] = pd.Series([45, 212, 21])
 cities['Population Density'] = cities['Population'] / cities['Area']
 cities
@@ -794,7 +767,7 @@ cities
 
 
 
-```
+```python
 cities['Is large and has a Saint'] = (cities['Area'] > 50) & cities['City name'].apply(lambda name: name.startswith('San'))
 cities
 ```
@@ -861,24 +834,18 @@ cities
 Both Series and DataFrame objects also define an index property that assigns an identifier value to each Series item or DataFrame row. By default, at construction, *pandas* assigns index values that reflect  ordering of the source data. Once created, the index values are stable; that is, they do no change when data is reordered.
 
 
-```
+```python
 city_names.index
 ```
-
-
-
 
     RangeIndex(start=0, stop=3, step=1)
 
 
 
 
-```
+```python
 cities.index
 ```
-
-
-
 
     RangeIndex(start=0, stop=3, step=1)
 
@@ -887,11 +854,9 @@ cities.index
 Call DataFrame.reindex to manually reorder the rows.
 
 
-```
+```python
 cities.reindex([2, 0, 1])
 ```
-
-
 
 
 <div>
@@ -953,7 +918,7 @@ cities.reindex([2, 0, 1])
 Reindexing is a great way to shuffle (randomize) a DataFrame.
 
 
-```
+```python
 cities.reindex(np.random.permutation(cities.index))
 ```
 
@@ -1017,7 +982,7 @@ cities.reindex(np.random.permutation(cities.index))
 
 
 
-```
+```python
 cities.reindex([1, 2, 3])
 ```
 
@@ -1085,7 +1050,7 @@ If our reindex input array includes values not in the original DataFrame index v
 We can use the drop method to remove rows and columns from the dataframe. With axis value set to 0 we will drop the row and axis value set to 1 will drop the columns. By default the axis value is set to 0.
 
 
-```
+```python
 cities
 ```
 
@@ -1149,7 +1114,7 @@ cities
 
 
 
-```
+```python
 cities.drop([2]) # drop the third row from the data frame
 ```
 
@@ -1205,7 +1170,7 @@ cities.drop([2]) # drop the third row from the data frame
 
 
 
-```
+```python
 cities.drop(['Area', 'Population'], axis = 1) # drop the coulumns of Area and Population
 ```
 

@@ -41,7 +41,7 @@ print(b[0,0], b[0,1], b[1,0])
     (2, 3)
     1 2 4
     
-
+### Creating arrays
 Numpy also provides many functions to create arrays:
 
 
@@ -102,6 +102,7 @@ print(j)
       [0 1]]]
     
 
+### Indexing and accessing arrays
 Numpy allows several ways to index an arrays.
 1. Slicing  
 Similar to Python lists, numpy arrays can be sliced, and we must speciy the slice for each dimension. We can mix intger indexing with slice indexing, but this will yield an array of lower rank than the original array.
@@ -290,6 +291,7 @@ To form the inner / dot product between a vector / matrix and a vector / matrix 
 
 
 ```python
+
 x = np.array([[1,2],[3,4]])
 y = np.array([[5,6],[7,8]])
 
@@ -404,7 +406,7 @@ Broadcasting two arrays together follows these rules:
 
 Function that support braodcasting are known as **universal funcions**. The full list of universal functions is available [here](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
 
-## Array manipulation [routines](https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html) 
+### Array manipulation [routines](https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html) 
 1. Reshaping an array : gives a new shape to an array without changing its data
 
 ```python
@@ -447,6 +449,7 @@ print(f.shape, f)
 
 
 2. Ravel : Returns a contiguous falttened array. Returns a 1-D array
+
 ```python
 x = np.array([[1, 2, 3], [4, 5, 6]])
 print(x.shape, x)
@@ -478,6 +481,7 @@ print(np.ravel(x, order='K'))
     
 
 3. Flat : Returns a 1-D iterator over the array
+
 ```python
 x = np.arange(1, 7).reshape(2, 3)
 print(x)
@@ -507,6 +511,7 @@ print(x)
 
 
 4. Flatten : Returns a copy of the array collapsed into one dimension
+
 ```python
 a = np.array([[1, 2], [3, 4]])
 print(a)
@@ -530,6 +535,7 @@ print(c)
 
 
 5. Transpose : Compute the transpose 
+
 ```python
 x = np.arange(4).reshape(2, 2)
 print(x)
@@ -557,6 +563,7 @@ print(y)
 
 
 6. Swapaxes : interchange two axes of an array
+
 ```python
 x = np.array([[1, 2, 3]])
 print(x)
@@ -590,6 +597,7 @@ print(y)
 
 
 7. Creating arrays by speciying minimum dimension
+
 ```python
 a = np.atleast_1d([1, 2])
 print(a)
@@ -615,6 +623,7 @@ print(c.shape)
 
 
 8. Expanding and squeezing the shape of arrays
+
 ```python
 x = np.array([1, 2])  # x has two axis here, axis = 0 is columns and axis = 1 is row
 print(x)
@@ -669,6 +678,7 @@ print(z.shape)
 
 
 9. Splitting an array
+
 ```python
 # 1. Split : Split an array into multiple sub-arrays
 x = np.arange(9.0)
@@ -725,6 +735,7 @@ print(y)
 
 
 10. Adding and removing elements
+
 ```python
 # 1. delete : Return a new array with sub-arrys along an axis deleted. 
 x = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
