@@ -407,7 +407,7 @@ Broadcasting two arrays together follows these rules:
 Function that support braodcasting are known as **universal funcions**. The full list of universal functions is available [here](https://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
 
 ### Array manipulation [routines](https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html) 
-1. Reshaping an array : gives a new shape to an array without changing its data
+* Reshaping an array : gives a new shape to an array without changing its data
 
 ```python
 a = np.arange(6)
@@ -448,7 +448,7 @@ print(f.shape, f)
     
 
 
-2. Ravel : Returns a contiguous falttened array. Returns a 1-D array
+* Ravel : Returns a contiguous falttened array. Returns a 1-D array
 
 ```python
 x = np.array([[1, 2, 3], [4, 5, 6]])
@@ -480,7 +480,7 @@ print(np.ravel(x, order='K'))
     [1 2 3 4 5 6]
     
 
-3. Flat : Returns a 1-D iterator over the array
+* Flat : Returns a 1-D iterator over the array
 
 ```python
 x = np.arange(1, 7).reshape(2, 3)
@@ -510,7 +510,7 @@ print(x)
     
 
 
-4. Flatten : Returns a copy of the array collapsed into one dimension
+* Flatten : Returns a copy of the array collapsed into one dimension
 
 ```python
 a = np.array([[1, 2], [3, 4]])
@@ -534,7 +534,7 @@ print(c)
     
 
 
-5. Transpose : Compute the transpose 
+* Transpose : Compute the transpose 
 
 ```python
 x = np.arange(4).reshape(2, 2)
@@ -562,7 +562,7 @@ print(y)
     
 
 
-6. Swapaxes : interchange two axes of an array
+* Swapaxes : interchange two axes of an array
 
 ```python
 x = np.array([[1, 2, 3]])
@@ -596,7 +596,7 @@ print(y)
     
 
 
-7. Creating arrays by speciying minimum dimension
+* Creating arrays by speciying minimum dimension
 
 ```python
 a = np.atleast_1d([1, 2])
@@ -622,7 +622,7 @@ print(c.shape)
     
 
 
-8. Expanding and squeezing the shape of arrays
+* Expanding and squeezing the shape of arrays
 
 ```python
 x = np.array([1, 2])  # x has two axis here, axis = 0 is columns and axis = 1 is row
@@ -677,7 +677,7 @@ print(z.shape)
     
 
 
-9. Splitting an array
+* Splitting an array
 
 ```python
 # 1. Split : Split an array into multiple sub-arrays
@@ -734,7 +734,7 @@ print(y)
     
 
 
-10. Adding and removing elements
+* Adding and removing elements
 
 ```python
 # 1. delete : Return a new array with sub-arrys along an axis deleted. 
