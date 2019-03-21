@@ -745,7 +745,7 @@ plt.show()
 ```
 
 
-![png](2019-03-18-Feature%20Selection%20in%20Machine%20Learnig_files/2019-03-18-Feature%20Selection%20in%20Machine%20Learnig_15_0.png)
+![png](../assets/images/feature_importance.png)
 
 
 
@@ -782,7 +782,7 @@ plt.show()
 ```
 
 
-![png](2019-03-18-Feature%20Selection%20in%20Machine%20Learnig_files/2019-03-18-Feature%20Selection%20in%20Machine%20Learnig_20_0.png)
+![png](../assets/images/feature_heatmap.png)
 
 
 From the heatmap we can see that the features tBodyAcc-Mean-1, tBodyAcc-Mean-2 and tBodyAcc-Mean-3 are highly uncorrelated. The features tBodyAcc-Max1 and tBodyAcc-STD-1 are higly correlated with correlation of 0.97. We can use this to select out the uncorrelated featurse and decrease the dimension of the data.
