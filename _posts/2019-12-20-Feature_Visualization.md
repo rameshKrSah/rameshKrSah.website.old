@@ -41,7 +41,7 @@ For the training of the CNN classifier and getting the class activation maps I u
 For the experiments, I have selected the sensor data from the chest randomly and segmented the sensor reading into window segments using the moving window method. The window size is set to 2.56 seconds i.e., 128 samples in each window with a overlap of 50% between consecutive windows. In figure shown below we have the count plot showing the number of data samples for each class in the dataset. As you can see we have a total of 12 different activities classes but the class **Jump Front & Back** has very low number of samples compared to other classes. Hence, to balance the dataset I have removed the samples from the **Jump Front & Back** class before training machine learning models. 
 
 <p align="center"> 
-<img src="../assets/images/ds_project(7).png" alt= "Count plot for the MHEALTH dataset."/>
+<img src="../assets/images/ds_project (7).png" alt= "Count plot for the MHEALTH dataset."/>
 </p>
 
 # Results
@@ -52,12 +52,12 @@ shows the training curve with accuracy and loss on training and validation set a
 model on the test set.
 
 <p align="center"> 
-<img src="../assets/images/ds_project(8).png" alt= "Accuracy and loss on the training set and validation set for the CNN
+<img src="../assets/images/ds_project (8).png" alt= "Accuracy and loss on the training set and validation set for the CNN
 model during training."/>
 </p>
 
 <p align="center"> 
-<img src="../assets/images/ds_project(6).png" alt= "Confusion matrix of the CNN model on the test set."/>
+<img src="../assets/images/ds_project (6).png" alt= "Confusion matrix of the CNN model on the test set."/>
 </p>
 
 From the confusion matrix we can see that the trained model is doing very well on most of the activities and is only struggling in between **Sitting** and **Standing** activities mostly. In the confusion matrix the vertical axis shows the true label and the horizontal axis shows the predicted label. As we can see the model is predicting `$34$` of the **Sitting** class samples as **Standing**. This again is completely justified by the nature of sensor data for these class. Since both of these class are stationary there is high probability that most of the data point in the sitting and standing class samples are very similar.
@@ -67,26 +67,26 @@ The next step was to plot the class activation maps on the sensor segments. To c
 To produce the class activation maps we need input samples. To this end I randomly selected a sample from the following six classes: 1) Sitting, 2) Walking, 3) Climbing Stairs, 4) Running, 5) Knees Bending, and 6) Cycling. These selected classes I believe represents the dataset well based on their nature and differences. For example, since the sitting and the standing classes are very similar to each other, it doesn't make sense to include these two simultaneously. The figures below shows the activation maps for the selected samples. 
 
 <p align="center"> 
-<img src="../assets/images/ds_project(4).png" alt= "Activation map for a sample from the Sitting class."/>
+<img src="../assets/images/ds_project (4).png" alt= "Activation map for a sample from the Sitting class."/>
 </p>
 
 For the *sitting* class, we can see that data points corresponding to the small movements are weighted more than the rapid changes in the sensor signal. This makes sense because while sitting, any person is not moving very much but also is not completely still.
 
 <p align="center"> 
-<img src="../assets/images/ds_project(5).png" alt= "Activation map for a sample from the Walking class."/>
+<img src="../assets/images/ds_project (5).png" alt= "Activation map for a sample from the Walking class."/>
 </p>
 
 For the *walking* class we see the opposite pattern to that of the *sitting* class. Here the rapid changes in the sensor signal is weighted more than the slow changes. This again is because while walking an individual experience a wider range of variation.
 
 
 <p align="center"> 
-<img src="../assets/images/ds_project(9).png" alt= "Activation map for a sample from the Climbing Stairs class."/>
+<img src="../assets/images/ds_project (9).png" alt= "Activation map for a sample from the Climbing Stairs class."/>
 </p>
 
 Judging by just our intuition we will guess that the activation map for the *Walking* class and the *Climbing Stairs* class will be very similar, because of the similarity between these two activities. But from the activation map shown above, we can see that two classes have some significant differences. For the *Climbing Stairs* class, the data points which have very significant differences between them are weighted the most where as most of other data points are assigned very low weight. Hence, the CNN model is looking for these significant change in the value of the data points when deciding for the *Climbing Stairs* class.
 
 <p align="center"> 
-<img src="../assets/images/ds_project(3).png" alt= "Activation map for a sample from the Running class."/>
+<img src="../assets/images/ds_project (3).png" alt= "Activation map for a sample from the Running class."/>
 </p>
 
 For the *Running* class, most higher value data points are assigned greater weight as evident in the above figure. So
@@ -94,11 +94,11 @@ any rapid changes in the sensor value is the driving characteristics that the CN
 on the *Running* class. 
 
 <p align="center"> 
-<img src="../assets/images/ds_project(2).png" alt= "Activation map for a sample from the Knees Bending class."/>
+<img src="../assets/images/ds_project (2).png" alt= "Activation map for a sample from the Knees Bending class."/>
 </p>
 
 <p align="center"> 
-<img src="../assets/images/ds_project(1).png" alt= "Activation map for a sample from the Cycling class."/>
+<img src="../assets/images/ds_project (1).png" alt= "Activation map for a sample from the Cycling class."/>
 </p>
 
 # Conclusion
