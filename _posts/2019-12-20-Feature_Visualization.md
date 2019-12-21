@@ -1,6 +1,6 @@
 ---
 title: 	"Feature Visualization of Human Activity Recognition Systems"
-date: 	2019-1220-
+date: 	2019-12-20
 mathjax: True
 tags: 	[machine_learning]
 ---
