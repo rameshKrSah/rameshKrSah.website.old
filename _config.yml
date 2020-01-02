@@ -263,13 +263,20 @@ defaults:
       layout: splash
       author_profile: false 
       read_time: true
-      comments: true
+      comments: # true
       share: true
       related: true
       
   # _pages
   - scope:
-      path: ""
+      path: "about"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      
+  - scope:
+      path: "publications"
       type: pages
     values:
       layout: splash
