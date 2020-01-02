@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "sunrise" # "default", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ramesh Kr Sah"
+title                    : "Ramesh's Blog"
 title_separator          : "-"
 name                     : "Ramesh Kumar Sah"
 description              : "machine learning, data science, phd journey, embedded systems, blog"
