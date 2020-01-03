@@ -5,7 +5,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Publications"
-    url: /publications/
+    url: /extras/publications/
 
     
   # - title: "About"
