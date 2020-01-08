@@ -5,7 +5,7 @@ header:
 
 ---
 <p> 
-<img src="../assets/images/bio_pic_circle.png" width="180" height="180" alt="A convolutional neural network architecture." align="right"/>
+<img src="../assets/images/bio_pic_circle.png" width="180" height="180" alt="Profile Picture" align="right"/>
 
 <p style="text-align:center">
 <name> Ramesh Kumar Sah </name>
