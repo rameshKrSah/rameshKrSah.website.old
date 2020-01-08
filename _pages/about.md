@@ -5,7 +5,7 @@ header:
 
 ---
 <p> 
-<img src="../assets/images/bio_pic_circle.jpg" width="200" height="241" alt="Profile Picture" align="right"/>
+<img src="../assets/images/bio_pic_circle.png" width="200" height="241" alt="Profile Picture" align="right"/>
 
 <p style="text-align:center">
 <name> Ramesh Kumar Sah </name>
