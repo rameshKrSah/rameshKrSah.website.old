@@ -272,16 +272,8 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: single
-      author_profile: true
-      
-  # _pages/extras
-  - scope:
-      path: "_pages/extras/"
-      type: posts
-    values:
       layout: splash
-      author_profile: false
+      author_profile: true
       
 
      
