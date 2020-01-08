@@ -14,6 +14,6 @@ development team as a Firmware Design Engineer. I primarily designed and wrote f
 like remote communication modules, smoke detector, queue management systems etc.
 
 I have an Bachelor of Engineering with focus on Electronics and Communication from [Kathmandu University](https://www.ku.edu.np/)
-, Nepal. 
+, Nepal. For more details about me please either check out my [LinkedIn profile](https://www.linkedin.com/in/rameshkrsah/) or my [CV](../assets/file/cv_2019.pdf).
 
 ## Cheers !!
