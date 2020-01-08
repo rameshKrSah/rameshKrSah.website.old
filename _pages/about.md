@@ -4,7 +4,10 @@ permalink: /about/
 header: 
 
 ---
-![alt text](../assets/images/bio_pic.jpg, "Pic")
+<p align = "left"> 
+<img src="../assets/images/Typical_cnn.png" width="540" height="720" alt="A convolutional neural network architecture." align="left"/>
+</p>
+
 
 Hi, I am a PhD student at [Embedded and Pervasive System Lab](http://epsl.eecs.wsu.edu/), part of the [School of 
 Electrical Engineering and Computer Science](https://school.eecs.wsu.edu/) at [Washington State University](https://wsu.edu/), 
