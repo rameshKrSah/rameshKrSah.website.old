@@ -4,10 +4,8 @@ permalink: /about/
 header: 
 
 ---
-<p align = "left"> 
-<img src="../assets/images/Typical_cnn.png" width="540" height="720" alt="A convolutional neural network architecture." align="left"/>
-</p>
-
+<p align = "right"> 
+<img src="../assets/images/bio_pic.jpg" width="110" height="130" alt="A convolutional neural network architecture." align="left"/>
 
 Hi, I am a PhD student at [Embedded and Pervasive System Lab](http://epsl.eecs.wsu.edu/), part of the [School of 
 Electrical Engineering and Computer Science](https://school.eecs.wsu.edu/) at [Washington State University](https://wsu.edu/), 
@@ -19,5 +17,7 @@ like remote communication modules, smoke detector, queue management systems etc.
 
 I have a Bachelor of Engineering with focus on Electronics and Communication from [Kathmandu University](https://www.ku.edu.np/)
 , Nepal. For more details about me please either check out my [LinkedIn profile](https://www.linkedin.com/in/rameshkrsah/) or my [CV](../assets/files/cv_2019.pdf).
+
+</p>
 
 ## Cheers !!
