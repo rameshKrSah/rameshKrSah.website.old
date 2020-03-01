@@ -107,5 +107,31 @@ pip install --upgrade tensorflow
 
 Once the installation is done, you can install other libraries that you need using *pip*.
 
+**4. Setup the Jupyter Kernel and Notebook**
+
+I think the best way to practice Python is with Jupyter notebook. Jupyter allows us to run codes in blocks and take
+notes as we experiments. There are many other benefits of using Jupyter notebook, which I leave upto you to find out :).
+
+To install the jupyter kernel and notebook execute this command:
+```
+conda install ipykernel jupyter
+```
+<p align="center"> 
+<img src="../assets/images/conda_jupyter.PNG" alt= "Install Jupyter."/>
+</p>
+
+
+And, finally create the kernel and give it a name. I will name it **test-Py3-TF-2.x**. Giving an informative name is
+again very important, because it will give you the most important information about the kernel when you to select a
+kernel among many. 
+
+```
+python -m ipykernel install --user --name testEnv --display-name "test-Py3-TF-2.x"
+```
+Note that you have to give the name of the conda virtual environment you want this kernel to associate with. 
+
+<p align="center"> 
+<img src="../assets/images/conda_kernel.PNG" alt= "Setup Kernel."/>
+</p>
 
 
