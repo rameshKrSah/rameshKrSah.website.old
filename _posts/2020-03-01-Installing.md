@@ -6,14 +6,15 @@ tags: 	[machine_learning, utilities]
 ---
 
 # Installing Machine Learning Framework(s) with Anaconda and Jupyter 
-Unsually installing machine learning frameworks such as TensorFlow and PyTorch is bit of a hassle and setting up the
+Usually installing machine learning frameworks such as TensorFlow and PyTorch is bit of a hassle and setting up the
 proper environment for development based on these frameworks becomes cumbersome than it should it. Although,
 installation pages for TensorFlow and PyTorch are pretty good, they lack the details information one need to setup the
 development environment easily with flexibility in mind. In this post, I am going to summarize the process I have used to setup the
 development environment for machine learning project. I will try to include all the details I have found though trial
 and error while installing these frameworks for myself. 
 
-1. Install Anaconda 
+**1. Install Anaconda**
+
 First and foremost, we will need to install the [Anaconda](https://www.anaconda.com/distribution/) distribution package
 manager. Anaconda will helps us setup the development environment very easily and provides a lot of flexibility in terms of creating and maintaining various virtual environment in our system without breaking any thing. 
 
@@ -45,7 +46,27 @@ conda init bash
 ```
 
 <p align="center"> 
-<img src="../assets/images/conda_init_bash.PNG" alt= "Initialze Anaconda for Git Bash."/>
+<img src="../assets/images/conda_init_bash.PNG" alt= "Initialize Anaconda for Git Bash."/>
 </p>
+
+**2. Setup the Virtual Environment**
+
+The most important feature of Anaconda is that it allows us to create and manage multiple virtual environments. Using
+virtual environments we can create development environment for different machine learning frameworks, without affecting
+the base Python environment and other virtual environments. 
+
+After a fresh installation of Anaconda, there will be just one environment i.e., the base. List the environments within
+you anaconda distribution with the command:
+```
+conda info --envs
+```
+Execute this command in the Anaconda PowerShell or Git Bash. I will recommend the PowerShell because it will also show
+you the current active environment. By default the base environment will be active.
+
+<p align="center"> 
+<img src="../assets/images/conda_env.PNG" alt= "List out the conda environments."/>
+</p>
+
+As you can see, I have 5 environments and I am currently in the base environment.
 
 
