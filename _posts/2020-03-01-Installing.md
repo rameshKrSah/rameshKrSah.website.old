@@ -169,5 +169,22 @@ Create a new notebook and test out the TensorFlow.
 I hope this tutorial helps you setup your development environment and point you in the right direction. I created
 this page for reference for me and other people like you. Cheers :) 
 
+**P.S.** To remove the virtual environment, execute the following command with the proper environment name.
+
+```
+conda remove -n testEnv --all
+```
+
+And after removing the environment, we have the returned to the initial state, where I had 5 environments (your's will
+be different)
+```
+conda info --envs
+```
+
+<p align="center"> 
+<img src="../assets/images/conda_remove.PNG" alt= "Remove an environment."/>
+</p>
+
+
 
 
