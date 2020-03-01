@@ -134,4 +134,39 @@ Note that you have to give the name of the conda virtual environment you want th
 <img src="../assets/images/conda_kernel.PNG" alt= "Setup Kernel."/>
 </p>
 
+**5. Last few step ... **
+
+Once you have done everything as listed above in the order, you would have installed the machine framework you wanted to
+install. For my case it was the TensorFlow library. Now you are ready to use it in your project. But first, deactivate
+the virtual environment and start the jupyter notebook. 
+```
+conda deactivate
+```
+
+<p align="center"> 
+<img src="../assets/images/conda_deactivate.PNG" alt= "Deactivate the virtual environment."/>
+</p>
+
+Note that, you have now returned to the base environment. Let's launch the jupyter notebook.
+
+```
+jupyter notebook
+```
+
+Create a new notebook and test out the TensorFlow.
+
+<p align="center"> 
+<img src="../assets/images/jupyter_kernels.PNG" alt= "List out the Jupyter Kernels."/>
+</p>
+
+
+<p align="center"> 
+<img src="../assets/images/kernel_test.PNG" alt= "TF test."/>
+</p>
+
+**6. Finish**
+I hope this tutorial helps you setup your development environment and point you in the right direction. I created
+this page for reference for me and other people like you. Cheers :) 
+
+
 
