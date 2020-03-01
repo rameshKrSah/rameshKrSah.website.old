@@ -92,6 +92,20 @@ Notice that now you are in the activated virtual environment.
 <img src="../assets/images/conda_activate.PNG" alt= "Activate the new virtual environment."/>
 </p>
 
+**3. Install the Machine Learning Framework(s) and other Libraries**
+Next install the machine learning framework and libraries that you need. Since, we are using TensorFlow as an example,
+I will install the TensorFlow and some other libraries. Install the TensorFlow using *pip*. You may need to upgrade the
+*pip*. The install page on TensorFlow website will be useful here. Check it
+[out](https://www.tensorflow.org/install/pip).
+```
+pip install --upgrade tensorflow
+```
+
+<p align="center"> 
+<img src="../assets/images/conda_install_tf.PNG" alt= "Install TensorFlow."/>
+</p>
+
+Once the installation is done, you can install other libraries that you need using *pip*.
 
 
 
