@@ -69,4 +69,29 @@ you the current active environment. By default the base environment will be acti
 
 As you can see, I have 5 environments and I am currently in the base environment.
 
+Say that you want to install the latest version of TensorFlow. To begin, first we will create a new virtual environment
+named **testEnv**. Choose the name of the virtual environment based on your requirement, so that it has an informative
+name for you. Here, I am creating this environment for demonstration purpose only. 
+```
+conda create -n testEnv python=3.7
+```
+Here, I am also specifying the Python version I want to use for this virtual environment.
+
+<p align="center"> 
+<img src="../assets/images/conda_create.PNG" alt= "Create a new virtual environment."/>
+</p>
+
+Press y, when prompted and the environment will be setup for you. Next, before doing anything we need to activate the
+virtual environment you just created. 
+```
+conda activate testEnv
+```
+Notice that now you are in the activated virtual environment. 
+
+<p align="center"> 
+<img src="../assets/images/conda_activate.PNG" alt= "Activate the new virtual environment."/>
+</p>
+
+
+
 
