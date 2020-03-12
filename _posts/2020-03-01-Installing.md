@@ -1,6 +1,7 @@
 ---
 title: 	"Installing Machine Learning Frameworks with Anaconda and Jupyter"
 date: 	2020-02-01
+comments: true
 mathjax: True
 tags: 	[machine_learning, utilities]
 ---
@@ -188,5 +189,5 @@ conda info --envs
 
 
 **Note: Please consult [here](https://www.pugetsystems.com/labs/hpc/How-to-Install-TensorFlow-with-GPU-Support-on-Windows-10-Without-Installing-CUDA-UPDATED-1419/)
-for details about the graphic card**.
+for details on how to setup your graphics card**.
 
