@@ -16,7 +16,8 @@ and error while installing these frameworks for myself.
 **1. Install Anaconda**
 
 First and foremost, we will need to install the [Anaconda](https://www.anaconda.com/distribution/) distribution package
-manager. Anaconda will helps us setup the development environment very easily and provides a lot of flexibility in terms of creating and maintaining various virtual environment in our system without breaking any thing. 
+manager. Anaconda will helps us setup the development environment very easily and provides a lot of flexibility in terms
+of creating and maintaining various virtual environment in our system without breaking any thing. 
 
 Select the proper installer for your system and the Python version you need. I will suggest you to install the latest
 Python version, since we can always create virtual environments for older Python version. The setup process is very
@@ -186,5 +187,6 @@ conda info --envs
 </p>
 
 
-
+**Note: Please consult [here](https://www.pugetsystems.com/labs/hpc/How-to-Install-TensorFlow-with-GPU-Support-on-Windows-10-Without-Installing-CUDA-UPDATED-1419/)
+for details about the graphic card**.
 
