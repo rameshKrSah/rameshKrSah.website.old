@@ -1,5 +1,5 @@
 ---
-title: 	"Installing Machine Learning Frameworks with Anaconda and Jupyter"
+title: 	"Installing TensorFlow or PyTorch with Anaconda and Jupyter"
 date: 	2020-02-01
 comments: true
 mathjax: True
