@@ -1,8 +1,8 @@
 ---
 title: "Publications"
-permalink: /extras/publications/
+permalink: /publications/
 header:
-
+comments: False
 ---
 
 # Conference Papers

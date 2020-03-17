@@ -1,7 +1,7 @@
 ---
 title: 	"Installing TensorFlow or PyTorch with Anaconda and Jupyter"
 date: 	2020-02-01
-comments: true
+comments: True
 mathjax: True
 tags: 	[machine_learning, utilities]
 ---
