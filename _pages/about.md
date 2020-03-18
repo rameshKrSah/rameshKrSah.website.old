@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header: 
-comments: False
+comments: false
 ---
 <p> 
 <img src="../assets/images/bio_pic_circle.png" width="200" height="241" alt="Profile Picture" align="right"/>
