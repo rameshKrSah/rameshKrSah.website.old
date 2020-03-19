@@ -10,4 +10,4 @@ comments: false
 
 
 # PrePrint 
-- **Ramesh Kumar Sah** and Hassan Ghasemzadeh, **Adversarial Transferability in Wearable Systems**, [Arxiv-PrePrint](https://arxiv.org/abs/2003.07982). 
+- **Ramesh Kumar Sah** and Hassan Ghasemzadeh, **Adversarial Transferability in Wearable Systems**, March-17, 2020. [Arxiv-PrePrint](https://arxiv.org/abs/2003.07982). 
