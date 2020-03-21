@@ -29,7 +29,7 @@ wearable sensor systems as a case study.
 # Discussion
 In this work, we have explored adversarial transferability from the following perspectives. 
 1. Transferability between machine learning models  
-   In this case, we have trained models of different architectures independently on the 
+	In this case, we have trained models of different architectures independently on the 
 same training set and evaluated them on adversarial examples computed using the 
 deep neural network. The dataset we have used consists of features extracted from 
 the time-series signals from different sensors for human activity recognition.
@@ -46,27 +46,32 @@ Figure 1 shows the training and test set accuracy of different classifiers. Here
   <figcaption align="center">Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
 </p>
 
-   Figures 2 and 3 show the misclassification rate and the success rate of untargeted and 
+	Figures 2 and 3 show the misclassification rate and the success rate of untargeted and 
 targeted (with target class sitting) adversarial examples computed using the DNN model 
 for all the different classifiers. As we can confirm, the transferability of both 
-untargeted and targeted adversarial examples are excellent in this scenario.
+untargeted and targeted adversarial examples are excellent in this scenario. Also  
+	- FGSM: Fast Gradient Sign Method
+	- BIM: Basic Iterative Method
+	- MIM: Moment Iterative Method
+	- SMM: Saliency Map Method
+	- CW: Carlini Wagner
+	are the different attack methods we have used in our work. You can find more 
+	details about them in the paper.
+	
 
 <p align="center">
-<figure>
-  <img src="../assets/images/transferability/ms_rate_untar_model_trans.png" alt="Model Untargeted Results" style="width:80%">
+  <img src="../assets/images/transferability/ms_rate_untar_model_trans.png" alt="Model Untargeted Results" style="width:80%"/>
   <figcaption align="center">Figure.2 - Misclassification rate of different classifiers on untargeted adversarial examples computed using the DNN model.</figcaption>
-</figure>
 </p>
 
 <p align="center">
-<figure>
-  <img src="../assets/images/transferability/acc_tar_model_trans.png" alt="Model Targeted Results" style="width:80%">
+  <img src="../assets/images/transferability/acc_tar_model_trans.png" alt="Model Targeted Results" style="width:80%"/>
   <figcaption align="center">Figure.3 - Success rate of different classifiers on targeted adversarial examples computed using the DNN model.</figcaption>
-</figure>
+</p>
 
 
 2. Transferability Across Subjects  
-  By transferability across subjects, we mean volunteers used in the study for data 
+	By transferability across subjects, we mean volunteers used in the study for data 
 collection. For example, to collect sensor data for human activity recognition, 
 labs recruit individuals to wear sensor systems on them. The collected sensor data 
 is then used to train machine learning systems, which are then deployed in real-life 
