@@ -27,7 +27,7 @@ wearable sensor systems as a case study.
 
 
 # Discussion
-In this work, we have explored adversarial transferability from the following perspectives. 
+In this work, we have explored adversarial transferability from the following perspectives.  
 1. Transferability between machine learning models  
 	In this case, we have trained models of different architectures independently on the 
 same training set and evaluated them on adversarial examples computed using the 
@@ -55,7 +55,7 @@ untargeted and targeted adversarial examples are excellent in this scenario. Als
 	- MIM: Moment Iterative Method
 	- SMM: Saliency Map Method
 	- CW: Carlini Wagner  
-	are the different attack methods we have used in our work. You can find more details about them in the paper.
+	are the different attack methods we have used in our work. You can find more details about them in the paper.  
 
 <p align="center">
   <img src="../assets/images/transferability/ms_rate_untar_model_trans.png" alt="Model Untargeted Results" style="width:80%"/>
@@ -124,5 +124,22 @@ right wrist model.
   <figcaption align="center">Figure.7 - Success rate of chest and wrist models on the targeted adversarial examples computed using the chest model.</figcaption>
 </p>
 
+
+4. Transferability Across Datasets  
+	Finally we evaluated the transferability between datasets, which will consider all 
+the cases we have discussed above and many more. We trained models on the UCI and the 
+MHEALTH model and used UCI model to compute adversarial examples for both untargeted and 
+targeted cases. Figures 8 and 9 shows the performance of these models on the adversarial
+examples.
+
+<p align="center">
+  <img src="../assets/images/transferability/untar_ms_rate_cross_dataset.png" alt="Datasets Untargeted Results" style="width:80%"/>
+  <figcaption align="center">Figure.8 - Misclassification rate of UCI and MHEALTH models on the untargeted adversarial examples computed using the UCI model.</figcaption>
+</p>
+
+<p align="center">
+  <img src="../assets/images/transferability/table_cross_datasets.PNG" alt="Datasets Targeted Results" style="width:80%"/>
+  <figcaption align="center">Figure.9 - Success rate of UCI and MHEALTH models on the targeted adversarial examples computed using the UCI model.</figcaption>
+</p>
 
 # Conclusion
