@@ -39,12 +39,12 @@ Figure 1 shows the training and test set accuracy of different classifiers. Here
 	- KNN: k-nearest neighbor Classifier
 	- DTC: Decision Tree Classifier
 	- LRC: Linear Regression Classifier
-	- DNN: Deep Neural Network
+	- DNN: Deep Neural Network  
 
 <p align="center">
   <img src="../assets/images/transferability/clfs_acc.png" alt="Clfs Acc" style="width:80%"/>
   <figcaption align="center">Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
-</p>
+</p>  
 
 	Figures 2 and 3 show the misclassification rate and the success rate of untargeted and 
 targeted (with target class sitting) adversarial examples computed using the DNN model 
@@ -56,7 +56,6 @@ untargeted and targeted adversarial examples are excellent in this scenario. Als
 	- SMM: Saliency Map Method
 	- CW: Carlini Wagner  
 	are the different attack methods we have used in our work. You can find more details about them in the paper.
-	
 
 <p align="center">
   <img src="../assets/images/transferability/ms_rate_untar_model_trans.png" alt="Model Untargeted Results" style="width:80%"/>
@@ -121,7 +120,7 @@ right wrist model.
 </p>
 
 <p align="center">
-  <img src="../assets/images/transferability/table_cross_locs.png" alt="Location Targeted Results" style="width:80%"/>
+  <img src="../assets/images/transferability/table_cross_locs.PNG" alt="Location Targeted Results" style="width:80%"/>
   <figcaption align="center">Figure.7 - Success rate of chest and wrist models on the targeted adversarial examples computed using the chest model.</figcaption>
 </p>
 
