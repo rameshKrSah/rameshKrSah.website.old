@@ -7,11 +7,11 @@ tags: 	[machine_learning, paper_article]
 ---
 
 # Introduction
-This article is a brief summary of our paper on "[Adversarial Transferability in 
-Wearable Sensor Systems](https://arxiv.org/pdf/2003.07982.pdf)". In this work we 
-have explored the topic of adversarial transferability from prespectives, that 
-we believe are novel and are not discussed yet. But before we discuss our results 
-and findings, let's first understand few topics and the framework of the paper.
+This article is brief summary of our paper on "[Adversarial Transferability in 
+Wearable Sensor Systems](https://arxiv.org/pdf/2003.07982.pdf)." In this work we, 
+have explored the topic of adversarial transferability from viewpoints that 
+we believe are novel have not been discussed yet. But before we present our results 
+and findings, let’s first understand a few topics and the framework of the paper.
 
 # Adversarial Transferability
 For the uninitiated, adversarial transferability captures the ability of adversarial 
@@ -26,11 +26,21 @@ comprehensive discussion that takes into account the model and the dataset with
 wearable sensor systems as a case study.
 
 
-# Experimental Setup
+# Discussion
+In this work, we have explored adversarial transferability from the following perspectives. 
+1. Transferability between machine learning models
+In this case, we have trained models of different architectures independently on the 
+same training set and evaluated them on adversarial examples computed using the 
+deep neural network. The dataset we have used consists of features extracted from 
+the time-series signals from different sensors for human activity recognition.
+Figure 
 
-
-
-# Results
+<p align="center">
+<figure>
+  <img src="../assets/images/transferability/clfs_acc.png" alt="Clfs Acc" style="width:100%">
+  <figcaption>Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
+</figure>
+</p>
 
 
 
