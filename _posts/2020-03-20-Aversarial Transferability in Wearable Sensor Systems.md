@@ -44,17 +44,31 @@ Figure 1 shows the training and test set accuracy of different classifiers. Here
 
 <p align="center">
 <figure>
-  <img src="../assets/images/transferability/clfs_acc.png" alt="Clfs Acc" style="width:100%">
-  <figcaption>Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
+  <img src="../assets/images/transferability/clfs_acc.png" alt="Clfs Acc" style="width:80%">
+  <figcaption align="center">Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
 </figure>
 </p>
 
-Now for the untargeted and targeted (with target class sitting) adversarial examples
-computed using the DNN model, the misclassification rate and the success rate of the 
-adversarial examples on these classifiers are shown in figure 2 and figure 3 
-respectively.
+Figures 2 and 3 show the misclassification rate and the success rate of untargeted and 
+targeted (with target class sitting) adversarial examples computed using the DNN model 
+for all the different classifiers. As we can confirm, the transferability of both 
+untargeted and targeted adversarial examples are excellent in this scenario.
 
- 
+<p align="center">
+<figure>
+  <img src="../assets/images/transferability/ms_rate_untar_model_trans.png" alt="Model Untargeted Results" style="width:80%">
+  <figcaption align="center">Figure.2 - Misclassification rate of different classifiers on untargeted adversarial examples computed using the DNN model.</figcaption>
+</figure>
+</p>
+
+<p align="center">
+<figure>
+  <img src="../assets/images/transferability/acc_tar_model_trans.png" alt="Model Targeted Results" style="width:80%">
+  <figcaption align="center">Figure.3 - Success rate of different classifiers on targeted adversarial examples computed using the DNN model.</figcaption>
+</figure>
+
+
+2. 
 
 
 # Conclusion
