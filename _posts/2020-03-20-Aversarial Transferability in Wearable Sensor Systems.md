@@ -30,22 +30,17 @@ wearable sensor systems as a case study.
 In this work, we have explored adversarial transferability from the following perspectives. 
 1. Transferability between machine learning models
 
-In this case, we have trained models of different architectures independently on the 
+   In this case, we have trained models of different architectures independently on the 
 same training set and evaluated them on adversarial examples computed using the 
 deep neural network. The dataset we have used consists of features extracted from 
 the time-series signals from different sensors for human activity recognition.
-Figure 1 shows the training and test set accuracy of different classifiers. Here
+Figure 1 shows the training and test set accuracy of different classifiers. Here  
 
 	- SVC: Support Vector Classifier
-	
 	- RFC: Random Forest Classifier
-	
 	- KNN: k-nearest neighbor Classifier
-	
 	- DTC: Decision Tree Classifier
-	
 	- LRC: Linear Regression Classifier
-	
 	- DNN: Deep Neural Network
 
 <p align="center">
@@ -76,7 +71,7 @@ untargeted and targeted adversarial examples are excellent in this scenario.
 
 2. Transferability Across Subjects
 
-By transferability across subjects, we mean volunteers used in the study for data 
+  By transferability across subjects, we mean volunteers used in the study for data 
 collection. For example, to collect sensor data for human activity recognition, 
 labs recruit individuals to wear sensor systems on them. The collected sensor data 
 is then used to train machine learning systems, which are then deployed in real-life 
