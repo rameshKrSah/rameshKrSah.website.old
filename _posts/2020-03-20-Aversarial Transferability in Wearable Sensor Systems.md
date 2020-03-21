@@ -25,7 +25,24 @@ in our work. We have tried to explore adversarial transferability and give a
 comprehensive discussion that takes into account the model and the dataset with 
 wearable sensor systems as a case study.
 
+# Classifiers and Attack Methods
+In our work we have used the following classifiers:
+	- SVC: Support Vector Classifier
+	- RFC: Random Forest Classifier
+	- KNN: k-nearest neighbor Classifier
+	- DTC: Decision Tree Classifier
+	- LRC: Linear Regression Classifier
+	- DNN: Deep Neural Network
+	
+and attack methods:
+	- FGSM: Fast Gradient Sign Method
+	- BIM: Basic Iterative Method
+	- MIM: Moment Iterative Method
+	- SMM: Saliency Map Method
+	- CW: Carlini Wagner
 
+You can find more details about them in our [paper](https://arxiv.org/pdf/2003.07982.pdf).
+	
 # Discussion
 In this work, we have explored adversarial transferability from the following perspectives.  
 1. Transferability between machine learning models  
@@ -33,14 +50,8 @@ In this work, we have explored adversarial transferability from the following pe
 same training set and evaluated them on adversarial examples computed using the 
 deep neural network. The dataset we have used consists of features extracted from 
 the time-series signals from different sensors for human activity recognition.
-Figure 1 shows the training and test set accuracy of different classifiers. Here  
-	- SVC: Support Vector Classifier
-	- RFC: Random Forest Classifier
-	- KNN: k-nearest neighbor Classifier
-	- DTC: Decision Tree Classifier
-	- LRC: Linear Regression Classifier
-	- DNN: Deep Neural Network  
-
+Figure 1 shows the training and test set accuracy of different classifiers.  
+  
 <p align="center">
   <img src="../assets/images/transferability/clfs_acc.png" alt="Clfs Acc" style="width:80%"/>
   <figcaption align="center">Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
@@ -49,13 +60,7 @@ Figure 1 shows the training and test set accuracy of different classifiers. Here
 	Figures 2 and 3 show the misclassification rate and the success rate of untargeted and 
 targeted (with target class sitting) adversarial examples computed using the DNN model 
 for all the different classifiers. As we can confirm, the transferability of both 
-untargeted and targeted adversarial examples are excellent in this scenario. Also  
-	- FGSM: Fast Gradient Sign Method
-	- BIM: Basic Iterative Method
-	- MIM: Moment Iterative Method
-	- SMM: Saliency Map Method
-	- CW: Carlini Wagner  
-	are the different attack methods we have used in our work. You can find more details about them in the paper.  
+untargeted and targeted adversarial examples are excellent in this scenario.
 
 <p align="center">
   <img src="../assets/images/transferability/ms_rate_untar_model_trans.png" alt="Model Untargeted Results" style="width:80%"/>
@@ -143,3 +148,8 @@ examples.
 </p>
 
 # Conclusion
+Our aim in this work was the extend the discussion of adversarial transferability 
+beyond the current discussion of the inter-model scenario and demonstrates how 
+adversarial transferability fares in new conditions. We think we have done what 
+we intended to do from our results and discussion. We encourage the reader to 
+check out our [paper](https://arxiv.org/pdf/2003.07982.pdf) for more details.
