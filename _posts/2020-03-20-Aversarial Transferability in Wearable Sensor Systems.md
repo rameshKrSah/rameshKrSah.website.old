@@ -46,7 +46,7 @@ Figure 1 shows the training and test set accuracy of different classifiers. Here
   <figcaption align="center">Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
 </p>
 
-Figures 2 and 3 show the misclassification rate and the success rate of untargeted and 
+	Figures 2 and 3 show the misclassification rate and the success rate of untargeted and 
 targeted (with target class sitting) adversarial examples computed using the DNN model 
 for all the different classifiers. As we can confirm, the transferability of both 
 untargeted and targeted adversarial examples are excellent in this scenario. Also   
@@ -54,8 +54,8 @@ untargeted and targeted adversarial examples are excellent in this scenario. Als
 	- BIM: Basic Iterative Method
 	- MIM: Moment Iterative Method
 	- SMM: Saliency Map Method
-	- CW: Carlini Wagner
-are the different attack methods we have used in our work. You can find more details about them in the paper.
+	- CW: Carlini Wagner  
+	are the different attack methods we have used in our work. You can find more details about them in the paper.
 	
 
 <p align="center">
@@ -76,9 +76,9 @@ labs recruit individuals to wear sensor systems on them. The collected sensor da
 is then used to train machine learning systems, which are then deployed in real-life 
 cases in applications such as health monitoring, medicine adherence, etc. With 
 transferability across subjects, we wanted to analyze how the different characteristics of individuals
-used for data collection affect the transferability of adversarial examples.  
+used for data collection affect the transferability of adversarial examples.    
 
-We divided the MHEALTH dataset into two groups based on the subject ID: data from 
+	We divided the MHEALTH dataset into two groups based on the subject ID: data from 
 even ID subjects into one group and data from odd ID subjects into another. We then 
 models on these dataset having same architectures and parameters. We computed untargeted 
 and targeted adversarial examples using the even model (aptly named because it was trained on 
