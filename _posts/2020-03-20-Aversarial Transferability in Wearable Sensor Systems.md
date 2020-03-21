@@ -27,19 +27,19 @@ wearable sensor systems as a case study.
 
 # Classifiers and Attack Methods
 In our work we have used the following classifiers:  
-	- SVC: Support Vector Classifier
-	- RFC: Random Forest Classifier
-	- KNN: k-nearest neighbor Classifier
-	- DTC: Decision Tree Classifier
-	- LRC: Linear Regression Classifier
-	- DNN: Deep Neural Network
+- SVC: Support Vector Classifier
+- RFC: Random Forest Classifier
+- KNN: k-nearest neighbor Classifier
+- DTC: Decision Tree Classifier
+- LRC: Linear Regression Classifier
+- DNN: Deep Neural Network
 	
 and attack methods:  
-	- FGSM: Fast Gradient Sign Method
-	- BIM: Basic Iterative Method
-	- MIM: Moment Iterative Method
-	- SMM: Saliency Map Method
-	- CW: Carlini Wagner
+- FGSM: Fast Gradient Sign Method
+- BIM: Basic Iterative Method
+- MIM: Moment Iterative Method
+- SMM: Saliency Map Method
+- CW: Carlini Wagner
 
 You can find more details about them in our [paper](https://arxiv.org/pdf/2003.07982.pdf).
 	
