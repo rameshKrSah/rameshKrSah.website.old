@@ -49,7 +49,7 @@ Figure 1 shows the training and test set accuracy of different classifiers. Here
 	Figures 2 and 3 show the misclassification rate and the success rate of untargeted and 
 targeted (with target class sitting) adversarial examples computed using the DNN model 
 for all the different classifiers. As we can confirm, the transferability of both 
-untargeted and targeted adversarial examples are excellent in this scenario. Also   
+untargeted and targeted adversarial examples are excellent in this scenario. Also  
 	- FGSM: Fast Gradient Sign Method
 	- BIM: Basic Iterative Method
 	- MIM: Moment Iterative Method
@@ -78,22 +78,51 @@ cases in applications such as health monitoring, medicine adherence, etc. With
 transferability across subjects, we wanted to analyze how the different characteristics of individuals
 used for data collection affect the transferability of adversarial examples.    
 
-	We divided the MHEALTH dataset into two groups based on the subject ID: data from 
-even ID subjects into one group and data from odd ID subjects into another. We then 
-models on these dataset having same architectures and parameters. We computed untargeted 
-and targeted adversarial examples using the even model (aptly named because it was trained on 
-the data from even ID subjects :)) and evaluated these adversarial examples on both 
-even and odd models. Figures 4 and 5 shows the performance of untargeted and targeted
-adversarial examples on these models respectively.
+	We divided the MHEALTH dataset into two groups based on the subject ID: data 
+from even ID subjects into one group and data from odd ID subjects into another. 
+We then model on these datasets having the same architectures and parameters. 
+We computed untargeted and targeted adversarial examples using the even model 
+(aptly named because it was trained on the data from even ID subjects :)) and 
+evaluated these adversarial examples on both even and odd models. Figures 4 and 
+5 show the performance of untargeted and targeted adversarial examples on these 
+models, respectively.
 
 <p align="center">
-  <img src="../assets/images/transferability/mh_untar_ms_rate_cross_sub.png" alt="Model Untargeted Results" style="width:80%"/>
-  <figcaption align="center">Figure.4 - Misclassification rate of even and odd models on the on untargeted adversarial examples computed using the even model.</figcaption>
+  <img src="../assets/images/transferability/mh_untar_ms_rate_cross_sub.png" alt="Subject Untargeted Results" style="width:80%"/>
+  <figcaption align="center">Figure.4 - Misclassification rate of even and odd models on the untargeted adversarial examples computed using the even model.</figcaption>
 </p>
 
 <p align="center">
-  <img src="../assets/images/transferability/mh_tar_acc_cross_sub.png" alt="Model Targeted Results" style="width:80%"/>
+  <img src="../assets/images/transferability/mh_tar_acc_cross_sub.png" alt="Subject Targeted Results" style="width:80%"/>
   <figcaption align="center">Figure.5 - Success rate of even and odd models on the on targeted adversarial examples computed using the even model.</figcaption>
+</p>
+
+3. Transferability Across Sensor Locations  
+	In wearable systems, sensors can be placed at different body positions to measure the same physiological variation
+and bio-markers. For example, to detect human activity, a person can use wearable devices that can be placed at
+different body positions. The device can be worn on the wrist like a watch, placed in a pocket, worn around the
+ankle, attached to shoes and clothes, wrapped around the chest, and in many more ways. This numerous ways in
+which the sensor can be placed on the human body introduce artifacts and biases in the sensor reading than can
+cause problems for an adversary. Therefore, it becomes crucial to study adversarial transferability considering
+this variability in wearable sensor systems.  
+
+	The MHEALTH dataset has readings from three same-type accelerometer sensors placed at different body
+positions. The first sensor is wrapped around the subject chest, the second is worn by the subject on the right wrist,
+and the last one is worn on the left ankle. To evaluate adversarial transferability across sensor locations
+we train machine learning models on the data from chest and right wrist sensors. We will use the chest 
+model to compute adversarial examples and then test them on the right wrist model. Figures 6 and 7 show
+the performance of untargeted and targeted adversarial examples computed using the chest model on chest and 
+right wrist model.
+
+
+<p align="center">
+  <img src="../assets/images/transferability/mh_untar_ms_rate_cross_body_locs.png" alt="Location Untargeted Results" style="width:80%"/>
+  <figcaption align="center">Figure.6 - Misclassification rate of chest and wrist models on the untargeted adversarial examples computed using the chest model.</figcaption>
+</p>
+
+<p align="center">
+  <img src="../assets/images/transferability/table_cross_locs.png" alt="Location Targeted Results" style="width:80%"/>
+  <figcaption align="center">Figure.7 - Success rate of chest and wrist models on the targeted adversarial examples computed using the chest model.</figcaption>
 </p>
 
 
