@@ -35,15 +35,21 @@ same training set and evaluated them on adversarial examples computed using the
 deep neural network. The dataset we have used consists of features extracted from 
 the time-series signals from different sensors for human activity recognition.
 Figure 1 shows the training and test set accuracy of different classifiers. Here
+
 	- SVC: Support Vector Classifier
+	
 	- RFC: Random Forest Classifier
+	
 	- KNN: k-nearest neighbor Classifier
+	
 	- DTC: Decision Tree Classifier
+	
 	- LRC: Linear Regression Classifier
+	
 	- DNN: Deep Neural Network
 
 <p align="center">
-<figure>
+<figure align="center">
   <img src="../assets/images/transferability/clfs_acc.png" alt="Clfs Acc" style="width:80%">
   <figcaption align="center">Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
 </figure>
@@ -68,7 +74,15 @@ untargeted and targeted adversarial examples are excellent in this scenario.
 </figure>
 
 
-2. 
+2. Transferability Across Subjects
+
+By transferability across subjects, we mean volunteers used in the study for data 
+collection. For example, to collect sensor data for human activity recognition, 
+labs recruit individuals to wear sensor systems on them. The collected sensor data 
+is then used to train machine learning systems, which are then deployed in real-life 
+cases in applications such as health monitoring, medicine adherence, etc. With 
+transferability across subjects, we wanted to analyze how the different characteristics of individuals
+used for data collection affect the transferability of adversarial examples.  
 
 
 # Conclusion
