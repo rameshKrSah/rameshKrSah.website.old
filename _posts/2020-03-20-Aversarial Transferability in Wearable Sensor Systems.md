@@ -49,6 +49,12 @@ Figure 1 shows the training and test set accuracy of different classifiers. Here
 </figure>
 </p>
 
+Now for the untargeted and targeted (with target class sitting) adversarial examples
+computed using the DNN model, the misclassification rate and the success rate of the 
+adversarial examples on these classifiers are shown in figure 2 and figure 3 
+respectively.
+
+ 
 
 
 # Conclusion
