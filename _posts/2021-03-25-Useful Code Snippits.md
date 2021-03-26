@@ -51,3 +51,26 @@ import pandas as pd
 
 # and so on ...
 ```
+
+
+## Python
+### Get memory usage of python script
+```python
+import os
+import psutil
+process = psutil.Process(os.getpid())
+print(process.memory_info().rss)
+```
+
+### Set random seed for the project
+```python
+seed_value = 42
+random.seed(seed_value)
+np.random.seed(seed_value)
+torch.manual_seed(seed_value)
+torch.cuda.manual_seed_all(seed_value)
+tf.random.set_seed(seed_value)
+```
+
+
+More code snippits can be found [here](https://amitness.com/cookbook/).
