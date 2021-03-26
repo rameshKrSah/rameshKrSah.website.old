@@ -1,8 +1,11 @@
 ---
-title: 	"Introduction to Decision Trees"
-date: 	2019-01-11
+title: "Introduction to Decision Trees"
+date: 2019-01-11
 mathjax: True
-tags: 	[machine_learning]
+tags: [machine_learning]
+categories:
+  - machine learning
+classes: wide
 ---
 
 # Decision Trees

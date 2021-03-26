@@ -1,7 +1,10 @@
 ---
-title: 	"Activation Functions in Artificial Neural Networks"
-date: 	2019-01-06
-tags: 	[machine_learning]
+title: "Activation Functions in Artificial Neural Networks"
+date: 2019-01-06
+tags: [machine_learning]
+categories:
+  - machine learning
+classes: wide
 ---
 
 In artificial neural networks, the activation function of a node defines the output of that node, or "neuron", given a 
@@ -32,5 +35,5 @@ convergence of the network.
 doesn't provide with optimum result.
 
 ### References  
-[A nice article on the topic](https://www.analyticsvidhya.com/blog/2017/10/fundamentals-deep-learning-activation-functions-when-to-use-them/)  
-[Wikipedia Article](https://en.wikipedia.org/wiki/Activation_function)
+- [A nice article on the topic](https://www.analyticsvidhya.com/blog/2017/10/fundamentals-deep-learning-activation-functions-when-to-use-them/)  
+- [Wikipedia Article](https://en.wikipedia.org/wiki/Activation_function)

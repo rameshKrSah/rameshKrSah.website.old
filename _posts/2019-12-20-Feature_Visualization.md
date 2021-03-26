@@ -1,11 +1,14 @@
 ---
-title: 	"Feature Visualization of Human Activity Recognition Systems"
-date: 	2019-12-20
+title: "Feature Visualization of Human Activity Recognition Systems"
+date: 2019-12-20
 mathjax: True
-tags: 	[machine_learning]
+tags: [machine_learning]
+categories:
+  - machine learning
+  - har
+classes: wide
 ---
 
-# Feature Visualization of Human Activity Recognition Systems
 For the class project of the Data Science course that I took during the fall 2019 semester at WSU, I choose to do a
 project about feature visualization of machine learning models trained to do human activity recognition (HAR). The
 motivation for me to choose this project was based on the fact that I was already working with HAR systems as part of my

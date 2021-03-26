@@ -1,12 +1,15 @@
 ---
-title: 	"Installing TensorFlow or PyTorch with Anaconda and Jupyter"
-date: 	2020-02-01
+title: "Installing TensorFlow or PyTorch with Anaconda and Jupyter"
+date: 2020-02-01
 comments: false
 mathjax: True
-tags: 	[machine_learning, utilities]
+tags: [machine_learning, utilities]
+categories:
+  - machine learning
+  - tools
+classes: wide 
 ---
 
-# Installing Machine Learning Framework(s) with Anaconda and Jupyter 
 Usually installing machine learning frameworks such as TensorFlow and PyTorch is bit of a hassle and setting up the
 proper environment for development based on these frameworks becomes cumbersome than it should it. Although,
 installation pages for TensorFlow and PyTorch are pretty good, they lack the details information one need to setup the

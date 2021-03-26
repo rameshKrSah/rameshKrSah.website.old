@@ -1,11 +1,15 @@
 ---
-title: 	"Adversarial Reprogramming and Adversarial Transferability"
-date: 	2020-01-02
+title: "Adversarial Reprogramming and Adversarial Transferability"
+date: 2020-01-02
 mathjax: True
-tags: 	[machine_learning]
+tags: [machine_learning]
+categories:
+  - machine learning
+  - adversarial example
+  - wearables
+classes: wide 
 ---
 
-# Adversarial Reprogramming
 Machine learning models have been shown to be vulnerable to adversarial examples for quite some time now. All the attack
 methods that have been proposed uses some type of optimization trick to craft adversarial examples, such that the
 adversary's goals of misclassification both targeted and non-targeted is achieved. These attack methods are designed with

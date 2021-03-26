@@ -1,9 +1,14 @@
 ---
-title: 	"Datasets for Stress Detection and Classification"
-date: 	2020-11-29
+title: "Datasets for Stress Detection and Classification"
+date: 2020-11-29
 comments: false
 mathjax: True
-tags: 	[machine_learning, datasets]
+tags: [machine_learning, datasets]
+categories:
+  - machine learning
+  - datasets
+  - stress detection
+classes: wide
 ---
 
 # Introduction

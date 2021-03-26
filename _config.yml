@@ -21,6 +21,7 @@ title_separator          : "-"
 name                     : "Ramesh Kumar Sah"
 description              : "machine learning, phd journey, robust machine learning, blog"
 url                      : "https://rameshkrsah.github.io" 
+
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "rameshKrSah/rameshKrSah.github.io"
@@ -79,7 +80,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : rameshkrshah
 facebook:
   username               :
   app_id                 :
@@ -105,7 +106,6 @@ author:
   name             : "Ramesh Kr Sah"
   avatar           : "/assets/images/bio_pic.jpg"
   bio              : "PhD Student at Washington State University"
-  location         : "Pullman, Washington"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -113,9 +113,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rameshKrSah"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:rameshkrsah49@gmail.com
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/rameshkrshah"
 
 
 # Site Footer
@@ -194,7 +194,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -265,10 +265,10 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: splash
-      author_profile: false
+      layout: single
+      author_profile: true
       read_time: true
-      comments: false
+      comments: true
       share: true
       related: true
       
@@ -277,8 +277,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: splash
+      layout: single
       author_profile: true
-      comments: false
 
      

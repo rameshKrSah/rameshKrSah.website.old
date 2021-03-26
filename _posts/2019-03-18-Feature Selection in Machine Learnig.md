@@ -1,12 +1,12 @@
 ---
-title: 	"Feature Selection in Machine Learning"
-date: 	2019-03-18
+title: "Feature Selection in Machine Learning"
+date: 2019-03-18
 mathjax: True
-tags: 	[machine_learning]
+tags: [machine_learning]
+categories:
+  - machine learning
+classes: wide
 ---
-
-
-# Feature Selection
 Very often we find ourselves with feature vectors with large number of components. It is a general understanding and well received one that large number of features is very often a bad idea. Thus we should in most try to reduce the number of features we have in the dataset. Lesser number features can help understand the relationship between the input and output better and give less complicated model which require less resources to run.
 
 

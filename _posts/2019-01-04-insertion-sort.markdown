@@ -1,7 +1,10 @@
 ---
-title: 	"Insertion Sort in C"
-date: 	2019-01-04
-tags: 	[algorithms]
+title: "Insertion Sort in C"
+date: 2019-01-04
+tags: [algorithms]
+categories:
+  - algorithms
+classes: wide
 ---
 
 Insertion sort is a simple algorithm that builds the final sorted array (or list) one item at a time. It is much less 
@@ -112,4 +115,4 @@ int main(void)
 }
 
 ```
-[Wikipedia Article on Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
+- [Wikipedia Article on Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)

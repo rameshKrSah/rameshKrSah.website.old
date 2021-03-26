@@ -1,9 +1,15 @@
 ---
-title: 	"Adversarial Transferability in Wearable Sensor Systems"
-date: 	2020-03-21
-comments: false
+title: "Adversarial Transferability in Wearable Sensor Systems"
+date: 2020-03-21
+comments: true
 mathjax: True
-tags: 	[machine_learning, paper_article]
+tags: [machine_learning, paper_article]
+categories:
+  - machine learning
+  - wearables
+  - adversarial example
+classes: wide
+excerpt: A discussion on adversarial transferability in wearables. 
 ---
 
 # Introduction
@@ -56,10 +62,12 @@ targeted (with target class sitting) adversarial examples computed using the DNN
 for all the different classifiers. As we can confirm, the transferability of both 
 untargeted and targeted adversarial examples are excellent in this scenario.
   
-<p align="center">
+<!-- <p align="center">
   <img src="../assets/images/transferability/clfs_acc.png" alt="Clfs Acc" style="width:80%"/>
   <figcaption align="center">Figure.1 - Classification accuracy of different classifiers on test and training set of the UCI feature dataset.</figcaption>
-</p>  
+</p>   -->
+
+![](../assets/images/transferability/clfs_acc.png){:.align-center}  
 
 <p align="center">
   <img src="../assets/images/transferability/ms_rate_untar_model_trans.png" alt="Model Untargeted Results" style="width:80%"/>
