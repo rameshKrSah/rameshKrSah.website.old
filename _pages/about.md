@@ -17,17 +17,20 @@ Electrical Engineering and Computer Science </a> at <a href="https://wsu.edu/"> 
 </p>
 
 <p style="text-align:justify">
-My research interests are:
+I am interested in the practical applications of machine learning and AI in areas such as health care, public health and wellness, environment, and education. I am also interested in the design, development, and applications of embedded systems in conjunction with machine learning algorithms towards solving minor and major problems in the aforementioned fields. I also like to explore robust machine learning and privacy-preserving machine learning.
+
+Some of my skills are:
 <ul>
-	<li>Robust machine learning and adversarial learning methods with a focus on ML applications in wearable computing.</li>
-	<li>Pervasive Computing and Mobile Health. </li>
-	<li>Conformance Machine Learning. </li>
+<li> Python, C++, C and Java</li>
+<li> Comprehensive knowledge of deep learning frameworks like PyTorch, TensorFlow, and Keras</li>
+<li> Familiar with JavaScript, HTML, Java, and SQL</li>
+<li> Sound knowledge of embedded systems from hardware and software perspectives</li>
 </ul>
 </p>
 
 <p style="text-align:justify">
-For more details about me please either check out my <a href="https://www.linkedin.com/in/rameshkrsah/"> LinkedIn profile </a> or my <a href="../assets/files/cv_2019.pdf">
-CV</a>.
+For more details about me please either check out my <a href="https://www.linkedin.com/in/rameshkrsah/"> LinkedIn profile </a> or my <a href="../assets/files/resume.pdf">
+Resume</a>.
 </p>
 
 ## Cheers !!
