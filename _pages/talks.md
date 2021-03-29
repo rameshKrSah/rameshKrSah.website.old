@@ -8,7 +8,7 @@ comments: false
 ## Year-2021
 1. **Mar 22** - Paper Review: [Microinteraction-based ecological momentary assessment using a smartwatch](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6143290/)
 
-2. **Feb 21** - Paper Review: [Earthquake transformer - an attentive deep learning model for simultaneous earthquake detection and phase picking](https://www.nature.com/articles/s41467-020-17591-w.epdf?sharing_token=IiqAaF4NxwhUWGQLLLyTw9RgN0jAjWel9jnR3ZoTv0Nn-FaUKb3nu4lFkVXeZX_BCz5eMr5DkfCxQ3XASbeWwldzdU9oZF3d2MMG4cz6GWhVklzzzlL0QeMcf9kJJxA8wJAFfFCmtdlpQklDmGG7qRVjJxlCK-nusJjMFWE2oEk%3D)
+2. **Feb 15** - Paper Review: [Earthquake transformer - an attentive deep learning model for simultaneous earthquake detection and phase picking](https://www.nature.com/articles/s41467-020-17591-w.epdf?sharing_token=IiqAaF4NxwhUWGQLLLyTw9RgN0jAjWel9jnR3ZoTv0Nn-FaUKb3nu4lFkVXeZX_BCz5eMr5DkfCxQ3XASbeWwldzdU9oZF3d2MMG4cz6GWhVklzzzlL0QeMcf9kJJxA8wJAFfFCmtdlpQklDmGG7qRVjJxlCK-nusJjMFWE2oEk%3D)
 
 ## Year-2020
 1. **Mar 25** - Presentation on **Adversarial Machine Learning** and paper review of **Adversarial Examples Are Not Bugs,
