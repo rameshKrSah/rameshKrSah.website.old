@@ -32,6 +32,40 @@ conda create -n envName python=version
 conda remove -n envName --all
 ```
 
+### Remove all the downloaded tarballs for installed packages
+```bash
+conda clean --all    # no active envs needed
+```
+
+### Conda Revisions
+Revisions allows us to track changes to our environment over time and roll-back to earlier time.
+
+#### List revisions
+```bash
+conda list --revisions
+```
+
+#### Roll back to earlier time
+```bash
+conda install --revision revision_number
+```
+
+### Export Conda enviroment details
+```bash
+conda env export --file environment.yml
+```
+
+### Create a conda environment from environment YAML file
+```bash
+conda env create -n conda-env-name -f /path/to/environment.yml
+```
+
+### List installed packages in a conda environment
+```bash
+conda list
+```
+
+
 ## Jekyll
 ### Run the Site Builder
 ```bash
