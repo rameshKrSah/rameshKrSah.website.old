@@ -156,3 +156,6 @@ bash setup.sh
 
 Here, I have assumed that you have Python 3 installed and your operating system is some variant of Linux. Similar can be acheived on MAC OS or Windows. 
 
+Anaconda is a popular package manager for Python and other programming languages. In the next post, we will learn how we can achieve the process described 
+above using Anaconda virtual environments. Cheers :grin:
+

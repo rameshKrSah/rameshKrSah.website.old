@@ -31,7 +31,7 @@ conda deactivate
 ```
 
 ```bash
-conda env export --file enviroment.yml
+conda env export > enviroment.yml
 ```
 
 ```bash
