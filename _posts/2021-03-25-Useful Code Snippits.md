@@ -1,6 +1,6 @@
 ---
-title: 	"Frequent and Useful Code Snippits"
-date: 	2021-03-25
+title: "Frequent and Useful Code Snippits"
+date: 2021-03-25
 comments: True
 mathjax: True
 tags: [tools]
@@ -65,6 +65,11 @@ conda env create -n conda-env-name -f /path/to/environment.yml
 conda list
 ```
 
+## Git
+### To stop tracking a file that is currently tracked
+```bash
+git rm --cached
+```
 
 ## Jekyll
 ### Run the Site Builder
@@ -107,4 +112,20 @@ tf.random.set_seed(seed_value)
 ```
 
 
-More code snippits can be found [here](https://amitness.com/cookbook/).
+## Shell
+### Set execute persmission for a script
+```bash
+chmod +x script_name.sh
+```
+
+### Run a script
+```bash
+# First way
+bash script_name.sh
+
+# Second way
+sh script_name.sh
+
+# Third way
+./script_name.sh
+```
