@@ -91,6 +91,10 @@ import pandas as pd
 # and so on ...
 ```
 
+### Convert Jupyter notebook to HTML, markdown, PDF and more...
+```bash
+jupyter nbconvert --to=html or markdown or pdf notebook.ipynb
+```
 
 ## Python
 ### Get memory usage of python script
