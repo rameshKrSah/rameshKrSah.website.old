@@ -1,5 +1,5 @@
 ---
-title: "A gudie for Exploratory Data Analysis (EDA)."
+title: "A guide for Exploratory Data Analysis (EDA)."
 date: 2021-04-14
 comments: True
 mathjax: True
@@ -17,7 +17,7 @@ Data is like food for machine learning, and any machine learning project should 
 3. Analyze relationships between variables. Use correlation matrix, scatter plots between two variables, histogram of a single variable, box-plot of a single variable, and other types as needed.
 4. Clean the data if needed by identifying and removing redundant variables, outliers, and invalid entries.
 5. Perform statistical tests.
-6. Finally, always take extensive notes of your process and make your EDA reproducible.
+6. Always take extensive notes of your process and make your EDA reproducible.
 
 Finally, some tools that I use for EDA:
 1. [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)
