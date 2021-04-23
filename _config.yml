@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Ramesh's Blog"
 title_separator          : "-"
 name                     : "Ramesh Kumar Sah"
-description              : "machine learning, phd journey, robust machine learning, blog"
+description              : ""
 url                      : "https://rameshkrsah.github.io" 
 
 # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
