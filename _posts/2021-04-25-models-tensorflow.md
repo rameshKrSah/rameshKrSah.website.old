@@ -8,7 +8,7 @@ tags: [machine learning]
 
 There are three ways of creating models in `TensorFlow` using `keras`.
 
-#### Sequential API
+### Sequential API
 
 Sequential is the easiest way to create models but allows less flexibility. We cannot share layers, have brances, multiple inputs or outputs
 with sequential api. We define the sequential TF model like this
@@ -21,7 +21,7 @@ def create_model(input_shape)
     return model
 ```
 
-#### Functional API
+### Functional API
 
 Functional api allows us to create complex models with support for multiple inpts and outputs. We can have brances, share layers, and have graphs.
 Any sequential model can be implemented using Functional api. Example of a Functional model is 
@@ -35,7 +35,7 @@ def create_model(input_shape):
     return model
 ```
 
-#### Model Subclassing
+### Model Subclassing
 
 The final way to create TF models is by inherating the `keras.Model` class. Model subclassing is fully-customizable and enables us to implement custom forward pass. 
 ```python
