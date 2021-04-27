@@ -69,7 +69,8 @@ model.compile(loss = keras.loss.BinaryCrossEntropy(),
             metrics = ['accuracy'])
 
 # traing the model
-model.fit(Y, Y, batch_size, n_epochs, validation_split=0.25, verbose = 1)
+model.fit(Y, Y, batch_size, n_epochs, validation_split=0.25, 
+        verbose = 1)
 
 # evaluate the model
 model.evaluate(x, y)

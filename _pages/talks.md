@@ -10,10 +10,10 @@ comments: false
 
 2. **Feb 15** - Paper Review: [Earthquake transformer - an attentive deep learning model for simultaneous earthquake detection and phase picking](https://www.nature.com/articles/s41467-020-17591-w.epdf?sharing_token=IiqAaF4NxwhUWGQLLLyTw9RgN0jAjWel9jnR3ZoTv0Nn-FaUKb3nu4lFkVXeZX_BCz5eMr5DkfCxQ3XASbeWwldzdU9oZF3d2MMG4cz6GWhVklzzzlL0QeMcf9kJJxA8wJAFfFCmtdlpQklDmGG7qRVjJxlCK-nusJjMFWE2oEk%3D)
 
+3. **Apr 26** - Paper Review: **Self-Supervised Learning for ECG-Based Emotion Recognition** [pdf](https://arxiv.org/pdf/1910.07497.pdf). [Slides](https://docs.google.com/presentation/d/1ssWA5alpJ6CQ_oQq2ZnNPBIqikRihguX-Ctoo0FCHAo/edit?)
+
 ## Year-2020
-1. **Mar 25** - Presentation on **Adversarial Machine Learning** and paper review of **Adversarial Examples Are Not Bugs,
-  They Are Feature** by *Andrew Ilyas et. al* [ArXiv](https://arxiv.org/abs/1905.02175)
-  [Slides](../assets/files/QE_Slides.pdf)
+1. **Mar 25** - Presentation on **Adversarial Machine Learning** and paper review of **Adversarial Examples Are Not Bugs,  They Are Feature** by *Andrew Ilyas et. al* [pdf](https://arxiv.org/abs/1905.02175) [Slides](../assets/files/QE_Slides.pdf)
 
 2. **Mar 15** - Paper Review : **Real-Time Adversarial Attacks** by *Yuan Gong et.al*. 
 [ArXiv PrePrint](https://arxiv.org/abs/1905.13399) [Slides](../assets/files/Real_Time_Adversarial_Attacks_Presentation_Slides.pdf)
