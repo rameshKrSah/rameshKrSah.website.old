@@ -133,9 +133,11 @@ include:
   - .htaccess
   - _pages
   - _posts
+  - literature
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - .vs
   - vendor
   - .asset-cache
   - .bundle
@@ -279,5 +281,15 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+  # _literature
+  - scope:
+      path: "literature/"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+
+      
 
      
